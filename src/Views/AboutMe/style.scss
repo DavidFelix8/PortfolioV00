@@ -1,0 +1,61 @@
+#AboutMe-Section {
+  display: flex;
+  background-color: #4c51bf;
+  min-height: 88.9vh;
+}
+
+.AboutMe-Article {
+  padding: 3rem;
+  h3 {
+    color: rgb(201, 201, 201);
+    font-size: 1.2rem;
+    white-space: pre-line;
+  }
+  .AboutMe-ContactMeHere {
+    color: rgb(201, 201, 201);
+    font-size: 1.7rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+  }
+  .AboutMe-btn-ArrowDown {
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  .AboutMe-ArrowDown {
+    width: 50%;
+    margin: 2rem auto;
+    height: 2rem;
+  }
+  .AboutMe-Social {
+    width: 14rem;
+  }
+  .AboutMe-Social-img {
+    width: 2rem;
+    height: 2rem;
+  }
+  @media (min-width: 540px) {
+    h3 {
+      font-size: 2rem;
+      margin-left: 4rem;
+      line-height: 2.8rem;
+    }
+    .AboutMe-ContactMeHere {
+      font-size: 2.4rem;
+      margin-top: 5rem;
+      margin-left: 12rem;
+    }
+    .AboutMe-ArrowDown {
+      margin-left: 10rem;
+      height: 3rem;
+    }
+    .AboutMe-Social {
+      margin-left: 4rem;
+      width: 20rem;
+    }
+    .AboutMe-Social-img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
