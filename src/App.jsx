@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import NavBar from './components/NavBar';
 import AboutMe from './Views/AboutMe';
+import SideDots from './components/SideDots/Index';
 
 class App extends Component {
   render() {
@@ -13,8 +14,9 @@ class App extends Component {
       <div>
         <BrowserRouter>
           <NavBar />
+          <SideDots />
           <Switch>
-            <AboutMe/>
+            <AboutMe />
           </Switch>
         </BrowserRouter>
       </div>

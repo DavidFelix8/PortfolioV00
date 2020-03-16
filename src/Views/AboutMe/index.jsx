@@ -7,12 +7,12 @@ class AboutMe extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      spanText: ['Welcome to my Portfolio !!!', ' \n', ' My name is David Félix'],
+      spanText: ['Hi,', ' \n', ' My name is David Félix'],
       text: [
         ' \n',
         'I’m a Computer Science Student',
         ' \n',
-        'And I’m a passionate for Web Developer',
+        'And I’m a passionate for Web Development',
         ' \n',
         'I am always looking to increase my skills and my creativity',
         ' \n',
@@ -41,31 +41,31 @@ class AboutMe extends Component {
           </h3>
           <h2 className="AboutMe-ContactMeHere">{this.state.contactText}</h2>
           <div className="AboutMe-Social d-flex justify-content-around">
-            <Link to="">
+            <Link target="_blank" to="https://www.linkedin.com/in/davidmcfelix/">
               <img
                 className="AboutMe-Social-img"
                 src="./images/social-icons/linkedin-icon.png"
-                alt=""
+                alt="LinkedIn"
               />
             </Link>
-            <Link to="">
+            <Link to="https://github.com/DavidFelix8">
               <img
                 className="AboutMe-Social-img"
                 src="./images/social-icons/github-icon.png"
-                alt=""
+                alt="Github"
               />
             </Link>
-            <Link to="">
+            <Link to={`mailto:davidfelix1997@hotmail.com`} target="_top">
               <img
                 className="AboutMe-Social-img"
                 src="./images/social-icons/email-icon.png"
-                alt=""
+                alt="Email"
               />
             </Link>
           </div>
           <div>
             <button className="AboutMe-btn-ArrowDown" onClick={this.updateContent}>
-              <i className="fas fa-long-arrow-alt-down AboutMe-ArrowDown"></i>
+              <i class="fas fa-arrow-alt-circle-down AboutMe-ArrowDown"></i>
             </button>
           </div>
         </article>

@@ -1,5 +1,18 @@
-#Navbar-Main {
-  padding: 3rem;
+body {
   background-color: #4c51bf;
+}
+
+#Navbar-Main {
   min-height: 10vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Navbar-Logo {
+  font-family: 'Indie Flower', cursive;
+  font-size: 3rem;
+}
+
+.Navbar-Links {
+  font-size: 1.5rem;
 }

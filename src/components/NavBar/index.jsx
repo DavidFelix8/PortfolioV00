@@ -7,14 +7,22 @@ export class NavBar extends Component {
   render() {
     return (
       <Navbar id="Navbar-Main" collapseOnSelect expand="lg" variant="dark">
-        <Navbar.Brand href="">DF</Navbar.Brand>
+        <Navbar.Brand href="/" className="Navbar-Logo">
+          DF
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="#">About Me</Nav.Link>
-            <Nav.Link href="#">Skils</Nav.Link>
-            <Nav.Link href="#">Projects</Nav.Link>
-            <Nav.Link eventKey={2} href="#">
+            <Nav.Link className="Navbar-Links" href="#">
+              About Me
+            </Nav.Link>
+            <Nav.Link className="Navbar-Links" href="#">
+              Skils
+            </Nav.Link>
+            <Nav.Link className="Navbar-Links" href="#">
+              Projects
+            </Nav.Link>
+            <Nav.Link className="Navbar-Links" eventKey={2} href="#">
               Resume
             </Nav.Link>
           </Nav>
