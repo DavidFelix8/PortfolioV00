@@ -1,0 +1,75 @@
+.Projects_Section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 60vh;
+  @media (min-width: 800px) {
+    min-height: 100vh;
+  }
+}
+
+.ProjectsCard-Background {
+  width: 350px;
+  height: 200px;
+  @media (min-width: 800px) {
+    width: 800px;
+    height: 550px;
+  }
+}
+
+.ProjectsCard-BigTitle {
+  font-size: 1rem;
+  @media (min-width: 800px) {
+    font-size: 3.5rem;
+  }
+}
+.ProjectsCard-Hover {
+  margin-top: 0;
+  @media (min-width: 800px) {
+    margin-top: 4rem;
+  }
+}
+.ProjectsCard-Span {
+  font-size: 0.6rem;
+  @media (min-width: 800px) {
+    font-size: 1.5rem;
+  }
+}
+.ProjectsCard-Languages {
+  font-size: 0.8rem;
+  @media (min-width: 800px) {
+    font-size: 3.5rem;
+  }
+}
+.ProjectsCard-SoonLanguages {
+  font-size: 0.8rem;
+  @media (min-width: 800px) {
+    font-size: 3.5rem;
+  }
+}
+.ProjectsCard-Paragraph {
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+  width: 80%;
+  @media (min-width: 800px) {
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    width: 40%;
+  }
+}
+.ProjectsCard-Paragraph2 {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  width: 80%;
+  @media (min-width: 800px) {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    width: 40%;
+  }
+}
+.ProjectsCard-CTA {
+  font-size: 0.8rem;
+  @media (min-width: 800px) {
+    font-size: 1.5rem;
+  }
+}

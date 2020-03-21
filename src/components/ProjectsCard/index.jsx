@@ -1,13 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './style.scss';
 import styled from '@emotion/styled/macro';
 
 const ProjectsCard = props => {
   const Hover = styled.div({
     opacity: 0,
-    transition: 'opacity 350ms ease',
-    marginTop: '4rem'
+    transition: 'opacity 350ms ease'
   });
 
   const DisplayOver = styled.div({
@@ -26,24 +24,19 @@ const ProjectsCard = props => {
   const BigTitle = styled.h2({
     textTransform: 'uppercase',
     color: 'red',
-    fontWeight: 'bold',
-    fontSize: '3.5rem'
+    fontWeight: 'bold'
   });
 
-  const Span = styled.div({ fontSize: '1.5rem' });
+  const Span = styled.div({});
 
   const SubTitle = styled.h4({
     transform: 'translate3d(0,50px,0)',
-    transition: 'transform 350ms ease',
-    fontSize: '1.8rem'
+    transition: 'transform 350ms ease'
   });
 
   const Paragraph = styled.p({
     transform: 'translate3d(0,50px,0)',
-    transition: 'transform 350ms ease',
-    marginTop: '4rem',
-    width: '40%',
-    fontSize: '1.8rem'
+    transition: 'transform 350ms ease'
   });
 
   const Background = styled.div({
@@ -51,8 +44,6 @@ const ProjectsCard = props => {
     backgroundRepeat: 'no-repeat',
     color: '#FFF',
     position: 'relative',
-    width: '800px',
-    height: '550px',
     cursor: 'pointer',
     backgroundImage: `url(${props.image})`,
     [`:hover ${DisplayOver}`]: {
@@ -69,28 +60,33 @@ const ProjectsCard = props => {
   const CTA = styled.a({
     position: 'absolute',
     bottom: '20px',
-    left: '20px',
-    fontSize: '1.5rem'
+    left: '20px'
   });
   const CTA2 = styled.a({
     position: 'absolute',
     bottom: '20px',
-    left: '130px',
-    fontSize: '1.5rem'
+    left: '130px'
   });
+
   return (
     <div className="swiper-slide">
-      <Background>
+      <Background className="ProjectsCard-Background">
         <DisplayOver>
-          <BigTitle>{props.name}</BigTitle>
-          <Hover>
-            <Span>Made with:</Span>
-            <SubTitle> {props.languages}</SubTitle>
-            <SubTitle> {props.soonLanguages}</SubTitle>
-            <Paragraph>{props.description}</Paragraph>
-            <Paragraph>Responsive: {props.responsive}</Paragraph>
-            <CTA href={props.github}>View Github</CTA>
-            <CTA2 href={props.website}>View Page</CTA2>
+          <BigTitle className="ProjectsCard-BigTitle">{props.name}</BigTitle>
+          <Hover className="ProjectsCard-Hover">
+            <Span className="ProjectsCard-Span">Made with:</Span>
+            <SubTitle className="ProjectsCard-Languages"> {props.languages}</SubTitle>
+            <SubTitle className="ProjectsCard-SoonLanguages"> {props.soonLanguages}</SubTitle>
+            <Paragraph className="ProjectsCard-Paragraph">{props.description}</Paragraph>
+            <Paragraph className="ProjectsCard-Paragraph2">
+              Responsive: {props.responsive}
+            </Paragraph>
+            <CTA href={props.github} className="ProjectsCard-CTA">
+              View Github
+            </CTA>
+            <CTA2 href={props.website} className="ProjectsCard-CTA">
+              View Page
+            </CTA2>
           </Hover>
         </DisplayOver>
       </Background>
