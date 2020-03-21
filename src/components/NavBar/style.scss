@@ -1,5 +1,12 @@
 body {
-  background-color: #4c51bf;
+  // background-color: #4c51bf;
+  background: rgb(76, 81, 191);
+  background: linear-gradient(
+    63deg,
+    rgba(76, 81, 191, 1) 0%,
+    rgba(5, 1, 66, 0.9699230033810399) 55%,
+    rgba(76, 81, 191, 1) 78%
+  );
 }
 
 #Navbar-Main {

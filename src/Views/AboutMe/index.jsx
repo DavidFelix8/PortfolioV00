@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { Image } from 'react-bootstrap';
 
 import './style.scss';
 
-class AboutMe extends Component {
+class AboutMeView extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -24,10 +25,12 @@ class AboutMe extends Component {
   }
 
   updateContent = () => {
-    this.setState({
-      spanText: 'There are your ways to Find Me:',
-      text: '',
-      contactText: ''
+    this.setState(previousState => {
+      return {
+        spanText: 'There are your ways to Find Me:',
+        text: '',
+        contactText: ''
+      };
     });
   };
 
@@ -42,21 +45,21 @@ class AboutMe extends Component {
           <h2 className="AboutMe-ContactMeHere">{this.state.contactText}</h2>
           <div className="AboutMe-Social d-flex justify-content-around">
             <Link target="_blank" to="https://www.linkedin.com/in/davidmcfelix/">
-              <img
+              <Image
                 className="AboutMe-Social-img"
                 src="./images/social-icons/linkedin-icon.png"
                 alt="LinkedIn"
               />
             </Link>
             <Link to="https://github.com/DavidFelix8">
-              <img
+              <Image
                 className="AboutMe-Social-img"
                 src="./images/social-icons/github-icon.png"
                 alt="Github"
               />
             </Link>
             <Link to={`mailto:davidfelix1997@hotmail.com`} target="_top">
-              <img
+              <Image
                 className="AboutMe-Social-img"
                 src="./images/social-icons/email-icon.png"
                 alt="Email"
@@ -65,7 +68,7 @@ class AboutMe extends Component {
           </div>
           <div>
             <button className="AboutMe-btn-ArrowDown" onClick={this.updateContent}>
-              <i class="fas fa-arrow-alt-circle-down AboutMe-ArrowDown"></i>
+              <i className="fas fa-arrow-alt-circle-down AboutMe-ArrowDown"></i>
             </button>
           </div>
         </article>
@@ -74,4 +77,4 @@ class AboutMe extends Component {
   }
 }
 
-export default AboutMe;
+export default AboutMeView;

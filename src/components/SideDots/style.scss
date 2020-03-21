@@ -1,3 +1,4 @@
+//Since there's no other way to show the SideDots only in desktop mode
 @media (max-width: 991px) {
   .SideDots-Main {
     display: none;
@@ -43,12 +44,10 @@
   }
 
   .SideDots-Description {
-    // display: none;
+    display: none;
     color: #fafafa;
-  }
-
-  .SideDots-Description:hover {
-    /* display: flex; */
-    color: green;
+    :hover {
+      color: green;
+    }
   }
 }
