@@ -1,9 +1,10 @@
 .Projects_Section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   min-height: 100vh;
 }
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 800px;
+  height: 550px;
 }

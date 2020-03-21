@@ -32,11 +32,13 @@ class ProjectsView extends Component {
       }
     };
     return (
-      <Swiper {...params}>
-        {Projects.map(ProjectSingle => {
-          return <ProjectsCard key={ProjectSingle} {...ProjectSingle} />;
-        })}
-      </Swiper>
+      <section className="Projects_Section">
+        <Swiper {...params}>
+          {Projects.map(ProjectSingle => {
+            return <ProjectsCard key={ProjectSingle} {...ProjectSingle} />;
+          })}
+        </Swiper>
+      </section>
     );
   }
 }
