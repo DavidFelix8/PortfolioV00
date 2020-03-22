@@ -3,6 +3,7 @@
   flex-direction: row;
   align-items: center;
   min-height: 60vh;
+  margin-top: 2rem;
   @media (min-width: 800px) {
     min-height: 100vh;
   }
@@ -56,12 +57,12 @@
 }
 .ProjectsCard-Paragraph {
   font-size: 0.8rem;
-  margin-top: 1.5rem;
-  width: 80%;
+  margin-top: 0.5rem;
+  width: 85%;
   @media (min-width: 800px) {
     font-size: 1.8rem;
     margin-top: 4rem;
-    width: 40%;
+    width: 45%;
   }
 }
 .ProjectsCard-Paragraph2 {
