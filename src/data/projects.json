@@ -1,7 +1,7 @@
 [
   {
     "name": "1st Project",
-    "image": "https://i.ibb.co/JrZtZfn/my1st-Project.png",
+    "image": "https://i.ibb.co/zFB7kFh/my1st-Project.png",
     "github": "",
     "website": "",
     "description": "This was my First Project ever, I did it months after my first year at University, So I wanted to test my knowledge and learn some things.",
@@ -11,7 +11,7 @@
   },
   {
     "name": "Food Project",
-    "image": "https://i.ibb.co/QFkN3F3/my2nd-Project.png",
+    "image": "https://i.ibb.co/Hrn05YL/my2nd-Project.png",
     "github": "",
     "website": "",
     "description": "This was my Second project. I made it because my mother was giving me recipes and I decided to added it on a website created by me. Soon this website will be changed, it will be remade to backend and will be hosted by a server and database with crud functionalities included.",
@@ -21,7 +21,7 @@
   },
   {
     "name": "Survivor",
-    "image": "https://i.ibb.co/3fCCGkf/1st-Project-IHImg.png",
+    "image": "https://i.ibb.co/6WNs660/1st-Project-IHImg.png",
     "github": "https://github.com/DavidFelix8/game-project-javascript",
     "website": "https://beasurvivordf.netlify.com/",
     "description": "This was my First Project at Ironhack. As you can see it's a game done with Canvas. I decided to do it because I always loved fps games, mostly shooting games so it reminds me those times that I used to play.",
@@ -30,7 +30,7 @@
   },
   {
     "name": "4Lolz",
-    "image": "https://i.ibb.co/6RdDFCH/2nd-Project-IHImg.png",
+    "image": "https://i.ibb.co/g9821Ry/2nd-Project-IHImg.png",
     "github": "https://github.com/DavidFelix8/FullStack-Project-IronHack",
     "website": "https://fullstack-froject2-ironhack.herokuapp.com/",
     "description": "This was my Second Project at Ironhack. It's a website where you can share funny posts about programming languages. There's also login with google and share on facebook. Hope you have fun watching it and relate to them.",
@@ -40,7 +40,7 @@
   },
   {
     "name": "Simplify.",
-    "image": "https://i.ibb.co/XxXN7C3/3rd-Project-IHImg.png",
+    "image": "https://i.ibb.co/bWTG4Pn/3rd-Project-IHImg.png",
     "github": "https://github.com/DavidFelix8/FullStack-Project-IronHack",
     "website": "https://fullstack-froject2-ironhack.herokuapp.com/",
     "description": "This was my Third Project at Ironhack.  This platform has monthly subscriptions where we offer Services to our memberships.",
@@ -50,7 +50,7 @@
   },
   {
     "name": "Portfolio",
-    "image": "https://i.ibb.co/SBbbmRv/1st-Portfolio-Img.png",
+    "image": "https://i.ibb.co/Fnd5Jhr/1st-Portfolio-Img.png",
     "github": "https://github.com/DavidFelix8/PortfolioV00",
     "website": "https://davidmcfelix.herokuapp.com/",
     "description": "This is the website that you are watching which is my First Portfolio.",

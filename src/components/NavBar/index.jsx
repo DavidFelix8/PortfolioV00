@@ -13,13 +13,13 @@ export class NavBar extends Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className="Navbar-Links" href="#">
+            <Nav.Link className="Navbar-Links" to="/AboutMe">
               About Me
             </Nav.Link>
             <Nav.Link className="Navbar-Links" href="#">
               Skils
             </Nav.Link>
-            <Nav.Link className="Navbar-Links" href="#">
+            <Nav.Link className="Navbar-Links" to="#">
               Projects
             </Nav.Link>
             <Nav.Link className="Navbar-Links" eventKey={2} href="#">

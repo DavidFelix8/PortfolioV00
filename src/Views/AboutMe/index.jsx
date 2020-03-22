@@ -68,7 +68,11 @@ class AboutMeView extends Component {
           </div>
           <div>
             <button className="AboutMe-btn-ArrowDown" onClick={this.updateContent}>
-              <i className="fas fa-arrow-alt-circle-down AboutMe-ArrowDown"></i>
+              <img
+                src="./images/arrow-circle-down-solid.svg"
+                alt="ArrowDown"
+                className="AboutMe-ArrowDown"
+              />
             </button>
           </div>
         </article>
