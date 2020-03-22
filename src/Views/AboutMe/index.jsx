@@ -8,6 +8,8 @@ class AboutMeView extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      button: true,
+      contactShow: false,
       spanText: ['Hi,', ' \n', ' My name is David Félix'],
       text: [
         ' \n',
@@ -29,7 +31,9 @@ class AboutMeView extends Component {
       return {
         spanText: 'There are your ways to Find Me:',
         text: '',
-        contactText: ''
+        contactText: '',
+        contactShow: !this.state.contactShow,
+        button: !this.state.button
       };
     });
   };
@@ -43,38 +47,42 @@ class AboutMeView extends Component {
             {this.state.text}
           </h3>
           <h2 className="AboutMe-ContactMeHere">{this.state.contactText}</h2>
-          <div className="AboutMe-Social d-flex justify-content-around">
-            <a href="https://www.linkedin.com/in/davidmcfelix/">
-              <Image
-                className="AboutMe-Social-img"
-                src="./images/social-icons/linkedin-icon.png"
-                alt="LinkedIn"
-              />
-            </a>
-            <a href="https://github.com/DavidFelix8">
-              <Image
-                className="AboutMe-Social-img"
-                src="./images/social-icons/github-icon.png"
-                alt="Github"
-              />
-            </a>
-            <a href={`mailto:davidmcfelix@gmail.com`} target="_top">
-              <Image
-                className="AboutMe-Social-img"
-                src="./images/social-icons/email-icon.png"
-                alt="Email"
-              />
-            </a>
-          </div>
-          <div>
-            <button className="AboutMe-btn-ArrowDown" onClick={this.updateContent}>
-              <img
-                src="./images/arrow-circle-down-solid.svg"
-                alt="ArrowDown"
-                className="AboutMe-ArrowDown"
-              />
-            </button>
-          </div>
+          {this.state.contactShow ? (
+            <div className="AboutMe-Social d-flex justify-content-around">
+              <a href="https://www.linkedin.com/in/davidmcfelix/">
+                <Image
+                  className="AboutMe-Social-img"
+                  src="./images/social-icons/linkedin-icon.png"
+                  alt="LinkedIn"
+                />
+              </a>
+              <a href="https://github.com/DavidFelix8">
+                <Image
+                  className="AboutMe-Social-img"
+                  src="./images/social-icons/github-icon.png"
+                  alt="Github"
+                />
+              </a>
+              <a href={`mailto:davidmcfelix@gmail.com`} target="_top">
+                <Image
+                  className="AboutMe-Social-img"
+                  src="./images/social-icons/email-icon.png"
+                  alt="Email"
+                />
+              </a>
+            </div>
+          ) : null}
+          {this.state.button ? (
+            <div>
+              <button className="AboutMe-btn-ArrowDown" onClick={this.updateContent}>
+                <img
+                  src="./images/arrow-circle-down-solid.svg"
+                  alt="ArrowDown"
+                  className="AboutMe-ArrowDown"
+                />
+              </button>
+            </div>
+          ) : null}
         </article>
       </section>
     );
