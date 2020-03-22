@@ -18,7 +18,13 @@ const ProjectsCard = props => {
     transition: 'background-color 350ms ease',
     backgroundColor: 'transparent',
     padding: '10px 20px 0 20px',
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
+    webkitTouchCallout: 'none' /* iOS Safari */,
+    webkitUserSelect: 'none' /* Safari */,
+    khtmlUserSelect: 'none' /* Konqueror HTML */,
+    mozUserSelect: 'none' /* Old versions of Firefox */,
+    msUserSelect: 'none' /* Internet Explorer/Edge */,
+    userSelect: 'none' /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
   });
 
   const BigTitle = styled.h2({
@@ -48,6 +54,7 @@ const ProjectsCard = props => {
     position: 'relative',
     cursor: 'pointer',
     backgroundImage: `url(${props.image})`,
+    ariaHidden: true,
     [`:hover ${BigTitle}`]: {
       display: 'flex,',
       justifyContent: 'flex-end'
@@ -86,7 +93,7 @@ const ProjectsCard = props => {
           <Hover className="ProjectsCard-Hover">
             <Span className="ProjectsCard-Span">Made with:</Span>
             <SubTitle className="ProjectsCard-Languages"> {props.languages}</SubTitle>
-            <SubTitle className="ProjectsCard-SoonLanguages"> {props.soonLanguages}</SubTitle>
+            <SubTitle className="ProjectsCard-SomethingElse"> {props.somethingElse}</SubTitle>
             <Paragraph className="ProjectsCard-Paragraph">{props.description}</Paragraph>
             <Paragraph className="ProjectsCard-Paragraph-Responsive">
               Responsive: {props.responsive}

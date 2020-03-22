@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
 import SideDots from './components/SideDots/Index';
 import HomeComponent from './components/Home';
+import FooterComponent from './components/Footer';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
             <Route path="/" exact component={HomeComponent} />
           </Switch>
           <SideDots />
+          <FooterComponent />
         </BrowserRouter>
       </div>
     );

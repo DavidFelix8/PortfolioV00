@@ -6,6 +6,7 @@
     "website": "",
     "description": "This was my First Project ever, I did it months after my first year at University, So I wanted to test my knowledge and learn some things.",
     "languages": "HTML, CSS, Javascript",
+    "somethingElse": "Not deployed yet, comming soon !!!",
     "responsive": "No"
   },
   {
@@ -15,7 +16,7 @@
     "website": "",
     "description": "This was my Second project. I made it because my mother was giving me recipes and I decided to added it on a website created by me. Soon this website will be changed, it will be remade to backend and will be hosted by a server and database with crud functionalities included.",
     "languages": "Html, CSS, Javascript",
-    "soonLanguages": "Soon will be: NodeJs, Express, HandleBars, MongoDB, Passport",
+    "somethingElse": "Soon will be: NodeJs, Express, HandleBars, MongoDB, Passport",
     "responsive": "No"
   },
   {
@@ -32,8 +33,9 @@
     "image": "https://i.ibb.co/6RdDFCH/2nd-Project-IHImg.png",
     "github": "https://github.com/DavidFelix8/FullStack-Project-IronHack",
     "website": "https://fullstack-froject2-ironhack.herokuapp.com/",
-    "description": "This was my Second Project at Ironhack. I did together with 2 Friends. It's a website where you can share funny posts about programming languages.",
+    "description": "This was my Second Project at Ironhack. It's a website where you can share funny posts about programming languages. There's also login with google and share on facebook. Hope you have fun watching it and relate to them.",
     "languages": "NodeJs, Express, HandleBars, Passport, MongoDB, Passport, Cloudinary, Bcrypt",
+    "somethingElse": "BackEnd application. I did together with 2 Friends.",
     "responsive": "Yes"
   },
   {
@@ -41,8 +43,9 @@
     "image": "https://i.ibb.co/XxXN7C3/3rd-Project-IHImg.png",
     "github": "https://github.com/DavidFelix8/FullStack-Project-IronHack",
     "website": "https://fullstack-froject2-ironhack.herokuapp.com/",
-    "description": "This was my Third Project at Ironhack. It was made with 1 Friend. This platform has monthly subscriptions where we offer Services to our memberships.",
-    "languages": "NodeJs, Express, Passport, MongoDB",
+    "description": "This was my Third Project at Ironhack.  This platform has monthly subscriptions where we offer Services to our memberships.",
+    "languages": "ReactJS, NodeJs, Express, Passport, MongoDB",
+    "somethingElse": "This is a MERN Application made by me and one friend.",
     "responsive": "Yes"
   },
   {
