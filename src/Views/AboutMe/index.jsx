@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { Image } from 'react-bootstrap';
+import ReactHover from 'react-hover';
 
 import './style.scss';
 
@@ -31,6 +31,11 @@ class AboutMeView extends Component {
   };
 
   render() {
+    const optionsCursorTrueWithMargin = {
+      followCursor: true,
+      shiftX: 20,
+      shiftY: 0
+    };
     return (
       <section id="AboutMe-Section">
         <article className="AboutMe-Article d-flex flex-column justify-content-center">
@@ -81,9 +86,19 @@ class AboutMeView extends Component {
                   />
                 </a>
               </div>
-              <button className="AboutMe-btn-KnowMore" onClick={this.MoreAbout}>
-                <h5 className="AboutMe-KnowMore">In case you want to know more about me</h5>
-              </button>
+
+              <ReactHover options={optionsCursorTrueWithMargin}>
+                <ReactHover.Trigger type="trigger">
+                  <button className="AboutMe-btn-KnowMore" onClick={this.MoreAbout}>
+                    <h5 className="AboutMe-KnowMore">
+                      &#x2B10;In case you want to know more about me &#x2B0E;
+                    </h5>
+                  </button>
+                </ReactHover.Trigger>
+                <ReactHover.Hover type="hover">
+                  <h1 className="AboutMe-Hover-ClickMe"> Click Me </h1>
+                </ReactHover.Hover>
+              </ReactHover>
             </div>
           )}
           {this.state.contactShowMore ? (

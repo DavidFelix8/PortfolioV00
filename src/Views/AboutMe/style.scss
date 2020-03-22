@@ -107,12 +107,13 @@
 .AboutMe-KnowMore-Links-div {
   display: flex;
   justify-content: space-between;
-  width: 50%;
-  margin-top: 2rem;
+  width: 40%;
+  margin: 2rem;
   .AboutMe-KnowMore-Links {
     font-size: 1.2rem;
     text-decoration: none;
     color: black;
+    margin-left: 1rem;
     @media (min-width: 700px) {
       font-size: 1.5rem;
     }
@@ -120,4 +121,9 @@
       font-size: 2rem;
     }
   }
+}
+
+.AboutMe-Hover-ClickMe {
+  padding: 1rem;
+  background-color: rgba(206, 206, 206, 0.411);
 }
