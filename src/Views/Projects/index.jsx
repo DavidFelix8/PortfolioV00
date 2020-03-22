@@ -14,7 +14,7 @@ class ProjectsView extends Component {
       projects: []
     };
   }
-  render() {
+  render() {  
     const params = {
       effect: 'coverflow',
       grabCursor: true,
@@ -28,7 +28,9 @@ class ProjectsView extends Component {
         slideShadows: true
       },
       pagination: {
-        el: '.swiper-pagination'
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
       }
     };
     return (
