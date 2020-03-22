@@ -2,6 +2,10 @@
   width: 350px;
   height: 200px;
   @media (min-width: 800px) {
+    width: 550px;
+    height: 400px;
+  }
+  @media (min-width: 1000px) {
     width: 800px;
     height: 550px;
   }

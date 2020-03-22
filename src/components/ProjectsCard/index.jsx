@@ -17,14 +17,14 @@ const ProjectsCard = props => {
     zIndex: 2,
     transition: 'background-color 350ms ease',
     backgroundColor: 'transparent',
-    padding: '20px 20px 0 20px',
+    padding: '10px 20px 0 20px',
     boxSizing: 'border-box'
   });
 
   const BigTitle = styled.h2({
     textTransform: 'uppercase',
-    color: 'red',
-    fontWeight: 'bold'
+    color: 'cornflowerblue',
+    fontWeight: '900'
   });
 
   const Span = styled.div({});
@@ -36,7 +36,8 @@ const ProjectsCard = props => {
 
   const Paragraph = styled.p({
     transform: 'translate3d(0,50px,0)',
-    transition: 'transform 350ms ease'
+    transition: 'transform 350ms ease',
+    fontWeight: '600'
   });
 
   const Background = styled.div({
@@ -47,6 +48,10 @@ const ProjectsCard = props => {
     position: 'relative',
     cursor: 'pointer',
     backgroundImage: `url(${props.image})`,
+    [`:hover ${BigTitle}`]: {
+      display: 'flex,',
+      justifyContent: 'flex-end'
+    },
     [`:hover ${DisplayOver}`]: {
       backgroundColor: 'rgba(0,0,0,.5)'
     },
@@ -61,12 +66,13 @@ const ProjectsCard = props => {
   const CTA = styled.a({
     position: 'absolute',
     bottom: '30px',
-    left: '20px'
+    left: '20px',
+    fontWeight: 'bold'
   });
   const CTA2 = styled.a({
     position: 'absolute',
     bottom: '30px',
-    left: '130px'
+    fontWeight: 'bold'
   });
 
   return (
@@ -82,13 +88,13 @@ const ProjectsCard = props => {
             <SubTitle className="ProjectsCard-Languages"> {props.languages}</SubTitle>
             <SubTitle className="ProjectsCard-SoonLanguages"> {props.soonLanguages}</SubTitle>
             <Paragraph className="ProjectsCard-Paragraph">{props.description}</Paragraph>
-            <Paragraph className="ProjectsCard-Paragraph2">
+            <Paragraph className="ProjectsCard-Paragraph-Responsive">
               Responsive: {props.responsive}
             </Paragraph>
             <CTA href={props.github} className="ProjectsCard-CTA">
               View Github
             </CTA>
-            <CTA2 href={props.website} className="ProjectsCard-CTA">
+            <CTA2 href={props.website} className="ProjectsCard-CTA2">
               View Page
             </CTA2>
           </Hover>

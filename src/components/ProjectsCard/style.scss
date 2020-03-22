@@ -16,10 +16,15 @@
   }
 }
 
+//Needs to be the same size as in View/Projects/style.scss. Otherwise it will look weird.
 .ProjectsCard-Background {
   width: 350px;
   height: 200px;
   @media (min-width: 800px) {
+    width: 550px;
+    height: 400px;
+  }
+  @media (min-width: 1000px) {
     width: 800px;
     height: 550px;
   }
@@ -28,30 +33,43 @@
 .ProjectsCard-BigTitle {
   font-size: 1rem;
   @media (min-width: 800px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 1000px) {
     font-size: 3.5rem;
   }
 }
 .ProjectsCard-Hover {
   margin-top: 0;
   @media (min-width: 800px) {
-    margin-top: 4rem;
+    //When hover the bigtitle goes to the right, so no margin-top needed
+    // margin-top: 4rem;
   }
 }
 .ProjectsCard-Span {
   font-size: 0.6rem;
   @media (min-width: 800px) {
+    font-size: 1.2rem;
+  }
+  @media (min-width: 1000px) {
     font-size: 1.5rem;
   }
 }
 .ProjectsCard-Languages {
   font-size: 0.8rem;
   @media (min-width: 800px) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 1000px) {
     font-size: 2rem;
   }
 }
 .ProjectsCard-SoonLanguages {
   font-size: 0.8rem;
   @media (min-width: 800px) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 1000px) {
     font-size: 2rem;
   }
 }
@@ -60,24 +78,44 @@
   margin-top: 0.5rem;
   width: 85%;
   @media (min-width: 800px) {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    width: 80%;
+  }
+  @media (min-width: 1000px) {
     font-size: 1.8rem;
     margin-top: 4rem;
-    width: 45%;
+    width: 80%;
   }
 }
-.ProjectsCard-Paragraph2 {
+.ProjectsCard-Paragraph-Responsive {
   font-size: 0.8rem;
   margin-top: 1rem;
   width: 80%;
   @media (min-width: 800px) {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    width: 80%;
+  }
+  @media (min-width: 1000px) {
     font-size: 1.8rem;
     margin-top: 3rem;
-    width: 40%;
+    width: 80%;
   }
 }
 .ProjectsCard-CTA {
+  left: 85px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  @media (min-width: 800px) {
+    font-size: 1.5rem;
+  }
+}
+.ProjectsCard-CTA2 {
+  left: 85px;
   font-size: 0.8rem;
   @media (min-width: 800px) {
     font-size: 1.5rem;
+    left: 135px;
   }
 }

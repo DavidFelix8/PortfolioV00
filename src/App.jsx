@@ -14,10 +14,10 @@ class App extends Component {
       <div>
         <BrowserRouter>
           <NavBar />
-          <SideDots />
           <Switch>
             <Route path="/" exact component={HomeComponent} />
           </Switch>
+          <SideDots />
         </BrowserRouter>
       </div>
     );

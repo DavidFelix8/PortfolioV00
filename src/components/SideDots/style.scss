@@ -23,10 +23,10 @@
 @media (min-width: 992px) {
   .SideDots-Main {
     position: fixed;
-    top: 32rem;
-    right: 0rem;
+    left: 90%;
+    top: 50%;
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     z-index: 20;
   }
 
