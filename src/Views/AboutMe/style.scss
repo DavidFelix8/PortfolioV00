@@ -2,6 +2,20 @@
   button:focus {
     outline: 0;
   }
+  /* For iOS Safari */
+  -webkit-touch-callout: none;
+  /* For Safari */
+  -webkit-user-select: none;
+  /* For konqueror HTML */
+  -khtml-user-select: none;
+  /* For old versions of Firefox */
+  -moz-user-select: none;
+  /* For Internet Explorer/Edge */
+  -ms-user-select: none;
+  /* For non-prefixed version,
+     currently supported by Chrome,
+     Opera and Firefox */
+  user-select: none;
 }
 
 #AboutMe-Section {
@@ -124,6 +138,10 @@
 }
 
 .AboutMe-Hover-ClickMe {
-  padding: 1rem;
+  font-size: 1.2rem;
   background-color: rgba(206, 206, 206, 0.411);
+  @media (min-width: 800px) {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
 }

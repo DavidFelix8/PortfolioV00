@@ -8,7 +8,7 @@ const ProjectsCard = props => {
     transition: 'opacity 350ms ease'
   });
 
-  const DisplayOver = styled.div({
+  const DisplayBox = styled.div({
     height: '100%',
     left: '0',
     position: 'absolute',
@@ -27,7 +27,7 @@ const ProjectsCard = props => {
     userSelect: 'none' /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
   });
 
-  const BigTitle = styled.h2({
+  const MainTitle = styled.h2({
     textTransform: 'uppercase',
     color: 'cornflowerblue',
     fontWeight: '900'
@@ -55,11 +55,11 @@ const ProjectsCard = props => {
     cursor: 'pointer',
     backgroundImage: `url(${props.image})`,
     ariaHidden: true,
-    [`:hover ${BigTitle}`]: {
+    [`:hover ${MainTitle}`]: {
       display: 'flex,',
       justifyContent: 'flex-end'
     },
-    [`:hover ${DisplayOver}`]: {
+    [`:hover ${DisplayBox}`]: {
       backgroundColor: 'rgba(0,0,0,.5)'
     },
     [`:hover ${SubTitle}, :hover ${Paragraph}`]: {
@@ -88,8 +88,8 @@ const ProjectsCard = props => {
         Click the image to see content
       </h4>
       <Background className="ProjectsCard-Background">
-        <DisplayOver>
-          <BigTitle className="ProjectsCard-BigTitle">{props.name}</BigTitle>
+        <DisplayBox>
+          <MainTitle className="ProjectsCard-MainTitle">{props.name}</MainTitle>
           <Hover className="ProjectsCard-Hover">
             <Span className="ProjectsCard-Span">Made with:</Span>
             <SubTitle className="ProjectsCard-Languages"> {props.languages}</SubTitle>
@@ -105,7 +105,7 @@ const ProjectsCard = props => {
               View Page
             </CTA2>
           </Hover>
-        </DisplayOver>
+        </DisplayBox>
       </Background>
     </div>
   );

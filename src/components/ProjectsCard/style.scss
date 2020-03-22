@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   min-height: 60vh;
-  margin-top: 2rem;
+  margin-top: 3rem;
   @media (min-width: 800px) {
     min-height: 100vh;
   }
@@ -25,12 +25,12 @@
     height: 400px;
   }
   @media (min-width: 1000px) {
-    width: 800px;
-    height: 550px;
+    width: 700px;
+    height: 450px;
   }
 }
 
-.ProjectsCard-BigTitle {
+.ProjectsCard-MainTitle {
   font-size: 1rem;
   @media (min-width: 800px) {
     font-size: 2.5rem;
@@ -42,7 +42,7 @@
 .ProjectsCard-Hover {
   margin-top: 0;
   @media (min-width: 800px) {
-    //When hover the bigtitle goes to the right, so no margin-top needed
+    //When hover the MainTitle goes to the right, so no margin-top needed
     // margin-top: 4rem;
   }
 }
