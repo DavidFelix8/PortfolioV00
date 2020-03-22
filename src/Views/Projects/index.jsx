@@ -14,7 +14,7 @@ class ProjectsView extends Component {
       projects: []
     };
   }
-  render() {  
+  render() {
     const params = {
       effect: 'coverflow',
       grabCursor: true,
@@ -36,8 +36,8 @@ class ProjectsView extends Component {
     return (
       <section className="Projects_Section">
         <Swiper {...params}>
-          {Projects.map(ProjectSingle => {
-            return <ProjectsCard key={ProjectSingle} {...ProjectSingle} />;
+          {Projects.map((ProjectSingle, index) => {
+            return <ProjectsCard key={index} {...ProjectSingle} />;
           })}
         </Swiper>
       </section>

@@ -7,6 +7,13 @@
     min-height: 100vh;
   }
 }
+.ProjectsCard-ClickImg {
+  color: white;
+  @media (min-width: 1025px) {
+    visibility: hidden;
+    font-size: 0px;
+  }
+}
 
 .ProjectsCard-Background {
   width: 350px;

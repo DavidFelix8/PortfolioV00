@@ -59,17 +59,20 @@ const ProjectsCard = props => {
 
   const CTA = styled.a({
     position: 'absolute',
-    bottom: '20px',
+    bottom: '30px',
     left: '20px'
   });
   const CTA2 = styled.a({
     position: 'absolute',
-    bottom: '20px',
+    bottom: '30px',
     left: '130px'
   });
 
   return (
     <div className="swiper-slide">
+      <h4 className="ProjectsCard-ClickImg d-flex justify-content-center">
+        Click the image to see content
+      </h4>
       <Background className="ProjectsCard-Background">
         <DisplayOver>
           <BigTitle className="ProjectsCard-BigTitle">{props.name}</BigTitle>
