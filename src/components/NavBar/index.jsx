@@ -17,12 +17,16 @@ export class NavBar extends Component {
               About Me
             </Nav.Link>
             <Nav.Link className="Navbar-Links" href="#">
-              Skils
+              Skills
             </Nav.Link>
             <Nav.Link className="Navbar-Links" to="#">
               Projects
             </Nav.Link>
-            <Nav.Link className="Navbar-Links" eventKey={2} href="#">
+            <Nav.Link
+              className="Navbar-Links"
+              eventKey={2}
+              href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A6d47facc-024e-48db-9a50-d0d93fd3e47e"
+            >
               Resume
             </Nav.Link>
           </Nav>

@@ -17,7 +17,7 @@ class AboutMeView extends Component {
         ' \n',
         'And I’m a passionate for Web Development',
         ' \n',
-        'I am always looking to increase my skills and my creativity',
+        'I’m always looking to increase my skills and my creativity',
         ' \n',
         'and learn new technologies so I can create amazing projects!'
       ],
