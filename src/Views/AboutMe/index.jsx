@@ -38,18 +38,18 @@ class AboutMeView extends Component {
     };
     return (
       <section id="AboutMe-Section">
-        <article className="AboutMe-Article d-flex flex-column justify-content-center">
+        <article className="AboutMe-Article d-flex">
           {this.state.textContent ? (
-            <div>
+            <div className="AboutMe-Text-First">
               <h3>
                 <strong>
                   Hi, {'\n'}
-                  My name is David Félix.
+                  My name is David Félix
                 </strong>
                 {'\n'} I’m a Computer Science Student,
                 {'\n'} And I’m a passionate for Web Development,
-                {'\n'} I’m always looking to increase my skills and my creativity, {'\n'}and learn
-                new technologies {'\n'} so I can create amazing projects!
+                {'\n'} I’m always looking to increase my skills, my creativity, {'\n'}and learn new
+                technologies {'\n'} so I can create amazing projects!
               </h3>
               <h2 className="AboutMe-ContactMeHere">You can contact me here:</h2>
               <button className="AboutMe-btn-ArrowDown" onClick={this.updateContent}>
@@ -61,7 +61,7 @@ class AboutMeView extends Component {
               </button>
             </div>
           ) : (
-            <div>
+            <div className="AboutMe-Text-Second">
               <h2 className="AboutMe-FindMe">There are your ways to Find Me:</h2>
               <div className="AboutMe-Social d-flex justify-content-around">
                 <a href="https://www.linkedin.com/in/davidmcfelix/">
@@ -90,33 +90,39 @@ class AboutMeView extends Component {
               <ReactHover options={optionsCursorTrueWithMargin}>
                 <ReactHover.Trigger type="trigger">
                   <button className="AboutMe-btn-KnowMore" onClick={this.MoreAbout}>
-                    <h5 className="AboutMe-KnowMore">In case you want to know more about me</h5>
+                    <h5 className="AboutMe-KnowMore">
+                      &#x2B10;In case you want to know more about me &#x2B0E;
+                    </h5>
                   </button>
                 </ReactHover.Trigger>
                 <ReactHover.Hover type="hover">
                   <h1 className="AboutMe-Hover-ClickMe"> Click Me </h1>
                 </ReactHover.Hover>
               </ReactHover>
+              {this.state.contactShowMore ? (
+                <div className="AboutMe-KnowMore-Links-div">
+                  <a
+                    className="AboutMe-KnowMore-Links"
+                    href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A6d47facc-024e-48db-9a50-d0d93fd3e47e"
+                  >
+                    Resume
+                  </a>
+                  <a
+                    className="AboutMe-KnowMore-Links"
+                    href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ad6989096-3801-4ff5-90a9-4df02990dd2d"
+                  >
+                    Goals
+                  </a>
+                </div>
+              ) : null}
             </div>
           )}
-          {this.state.contactShowMore ? (
-            <div className="AboutMe-KnowMore-Links-div">
-              <a
-                className="AboutMe-KnowMore-Links"
-                href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A6d47facc-024e-48db-9a50-d0d93fd3e47e"
-              >
-                Resume
-              </a>
-              <a
-                className="AboutMe-KnowMore-Links"
-                href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ad6989096-3801-4ff5-90a9-4df02990dd2d"
-              >
-                Goals
-              </a>
-            </div>
-          ) : null}
+          <img
+            className="AboutMe-SittingDesk"
+            src="./images/svg/SittingDesk.svg"
+            alt="SittingDesk"
+          />
         </article>
-        <img src="./images/svgs/SittingDesk.svg" alt="SittingDesk" />
       </section>
     );
   }
