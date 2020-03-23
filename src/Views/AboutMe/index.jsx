@@ -44,7 +44,7 @@ class AboutMeView extends Component {
               <h3>
                 <strong>
                   Hi, {'\n'}
-                  My name is David Félix
+                  My name is David Félix.
                 </strong>
                 {'\n'} I’m a Computer Science Student,
                 {'\n'} And I’m a passionate for Web Development,
@@ -90,9 +90,7 @@ class AboutMeView extends Component {
               <ReactHover options={optionsCursorTrueWithMargin}>
                 <ReactHover.Trigger type="trigger">
                   <button className="AboutMe-btn-KnowMore" onClick={this.MoreAbout}>
-                    <h5 className="AboutMe-KnowMore">
-                      &#x2B10;In case you want to know more about me &#x2B0E;
-                    </h5>
+                    <h5 className="AboutMe-KnowMore">In case you want to know more about me</h5>
                   </button>
                 </ReactHover.Trigger>
                 <ReactHover.Hover type="hover">
@@ -118,6 +116,7 @@ class AboutMeView extends Component {
             </div>
           ) : null}
         </article>
+        <img src="./images/svgs/SittingDesk.svg" alt="SittingDesk" />
       </section>
     );
   }

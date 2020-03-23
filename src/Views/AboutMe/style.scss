@@ -20,15 +20,14 @@
 
 #AboutMe-Section {
   display: flex;
-  // background-color: #4c51bf;
-  background: rgb(76, 81, 191);
+  // background: rgb(76, 81, 191);
   background: linear-gradient(
     63deg,
     rgba(76, 81, 191, 1) 0%,
     rgba(5, 1, 66, 0.9699230033810399) 55%,
     rgba(76, 81, 191, 1) 78%
   );
-  min-height: 88.9vh;
+  min-height: 90vh;
 }
 
 .AboutMe-Article {
@@ -121,12 +120,12 @@
 .AboutMe-KnowMore-Links-div {
   display: flex;
   justify-content: space-between;
-  width: 40%;
-  margin: 2rem;
+  width: 50%;
+  margin: 4rem;
   .AboutMe-KnowMore-Links {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-decoration: none;
-    color: black;
+    color: cyan;
     margin-left: 1rem;
     @media (min-width: 700px) {
       font-size: 1.5rem;

@@ -6,6 +6,7 @@ import './style.scss';
 export class NavBar extends Component {
   render() {
     return (
+      <NavBar id="Navbar-Main-Main">
       <Navbar id="Navbar-Main" collapseOnSelect expand="lg" variant="dark">
         <Navbar.Brand href="/" className="Navbar-Logo">
           DF
@@ -32,6 +33,7 @@ export class NavBar extends Component {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      </NavBar>
     );
   }
 }
